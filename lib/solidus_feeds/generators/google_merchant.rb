@@ -57,7 +57,7 @@ module SolidusFeeds
       end
 
       def link(product)
-       product_url(product, host: host)
+       Rails.application.routes.url_helpers.product_url(product, host: host)
       end
 
       def image_link(product)
