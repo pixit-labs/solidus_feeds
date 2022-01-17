@@ -57,7 +57,7 @@ module SolidusFeeds
       end
 
       def link(product)
-        spree_routes.product_url(product, host: host)
+       product_url(product, host: host)
       end
 
       def image_link(product)
